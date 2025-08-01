@@ -1,0 +1,116 @@
+.diagnosisMain {
+  width: 100%;
+  min-height: calc(100vh - 68px);
+  min-height: calc(100dvh - 68px);
+  background-color: #E7EBFD;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.diagnosisSection {
+  width: 1440px;
+  min-height: calc(100vh - 68px);
+  min-height: calc(100dvh - 68px);
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 6px 0px #0000000D;
+  padding-top: 120px;
+  padding-bottom: 172px;
+  display: flex;
+  flex-direction: column;
+}
+
+.diagnosisHeader {
+  width: 100%;
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 90px 12px 683px;
+  margin-bottom: 120px;
+}
+
+.diagnosisHeader p {
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #212121;
+}
+
+.closeBtn {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.questionBody {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.question {
+  margin-bottom: 60px;
+}
+
+.questionText {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #000000;
+}
+
+.questionSubtitle {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #9E9E9E;
+}
+
+/* ✨ Flexbox로 답변 버튼 감싸기 */
+.optionsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px 44px;
+  width: 100%;
+  max-width: 1096px;
+  min-height: 146px;
+  max-height: 470px;
+}
+
+.optionBtn {
+  width: 336px;
+  height: 65px;
+  background-color: #FFFFFF;
+  border: 1.5px solid #9E9E9E;
+  border-radius: 12px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  vertical-align: middle;
+  color: #9E9E9E;
+  cursor: pointer;
+}
+
+.navigationButtons {
+  width: 100%;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  gap: 1030px;
+  margin-top: auto;
+}
