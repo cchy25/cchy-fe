@@ -61,12 +61,21 @@ export default function PolicyPage() {
   };
 
   const renderSupportCategories = (categories: string[]) => {
-    return categories.map((cat) => {
-      if (cat === 'FUNDING') return '재정지원';
-      if (cat === 'ADMIN') return '행정지원';
-      return cat;
-    }).join(', ');
-  };
+      if (categories.length === 0) {
+        return '지원 항목 정보 없음';
+      }
+
+      return categories.map((cat, index) => {
+        // 카테고리 항목에 대해 <div>로 감싸기
+        return (
+          <div className={classes.list} key={index}>
+            {cat === 'FUNDING' ? '재정지원' :
+            cat === 'ADMIN' ? '행정지원' :
+            cat}  {/* 필요한 경우 추가적인 카테고리 이름 매칭 */}
+          </div>
+        );
+      });
+    };
 
   const calculateDDay = (dateStr: string | null) => {
     if (!dateStr) return '';
@@ -134,7 +143,7 @@ export default function PolicyPage() {
                     : '대상 정보 없음'}
                 </td>
                 <td className={classes.tbcellItem}>
-                  <div className={classes.list}>{renderSupportCategories(policy.supportCategories)}</div>
+                  {renderSupportCategories(policy.supportCategories)}
                 </td>
                 <td className={classes.tbcellPeriod}>
                   <p className={classes.dDay}>{calculateDDay(policy.applyEndAt)}</p>
