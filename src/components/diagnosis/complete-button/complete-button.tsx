@@ -4,6 +4,7 @@ import { useRouter } from 'next/navigation';
 import { diagnosisQuestions } from '@/data/question';
 import { useSelector } from 'react-redux';
 import { RootState } from '@/store/store';
+import axios from 'axios';
 
 export default function CompleteBtn() {
   const router = useRouter();
@@ -62,17 +63,24 @@ export default function CompleteBtn() {
       }
     }
 
+    result.supportCategories = [];
+
     console.log('최종 제출 데이터:', result);
 
+
     try {
-      // await fetch('/api/diagnosis', {
-      //   method: 'POST',
-      //   body: JSON.stringify(result),
-      //   headers: { 'Content-Type': 'application/json' },
-      // });
+      await axios.post('https://api.qstart.xyz/v1/diagnoses', result,
+        {
+          headers: {
+            "Content-Type": "application/json",
+            "Authorization" : "Bearer " + localStorage.getItem("accessToken")
+          }
+        }
+      ); // 백엔드 주소에 맞게 도메인 조정 필요
       router.push('/information/roadmap');
     } catch (err) {
       console.error('제출 오류:', err);
+      alert('제출에 실패했습니다. 잠시 후 다시 시도해주세요.');
     }
   };
 

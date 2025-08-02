@@ -46,3 +46,11 @@
     width: 158px;
     height: 100%;
 }
+
+.initial {
+    width: 32px;
+    height: 32px;
+    border-radius: 999px;
+    background-color: #0F2FD8;
+    color: white;
+}
