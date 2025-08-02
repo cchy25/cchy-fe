@@ -1,0 +1,87 @@
+.headerRow {
+    display: flex;
+    background-color: #E7EBFD;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.headerCell {
+    height: 50px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #212121;
+}
+
+.cellInterest { width: 80px; }
+.cellName { width: 480px; }
+.cellTarget { width: 200px; }
+.cellItem { width: 200px; }
+.cellPeriod { width: 200px; }
+.cellMethod { width: 200px; }
+.cellRate { width: 80px; }
+
+.bookMarkWrapper {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tbodyRow {
+    display: flex;
+    min-height: 100px;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.tbcellInterest { width: 80px; display: flex; align-items: center; justify-content: center;}
+.tbcellName { width: 480px; display: flex; flex-direction: column; justify-content: center;}
+.tbcellTarget { width: 200px; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 4px;}
+.tbcellItem { width: 200px; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 4px; }
+.tbcellPeriod { width: 200px; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 4px;}
+.tbcellMethod { width: 200px; display: flex; align-items: center; justify-content: center;}
+.tbcellRate { width: 80px; font-weight: 600; font-size: 16px; display: flex; align-items: center; justify-content: center; color: #212121;}
+
+.title {
+    font-weight: 500;
+    font-size: 16px;
+    color: #212121;
+}
+
+.business {
+    font-weight: 400;
+    font-size: 12px;
+    color: #212121;
+}
+
+.list {
+    height: 31px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    border-width: 1px;
+    padding: 4px 12px;
+    border: 1px solid #E0E0E0;
+    font-weight: 500;
+    font-size: 16px;
+    color: #9E9E9E;
+}
+
+.dDay {
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    color: #FFB300;
+}
+
+.period {
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    color: #212121;
+}

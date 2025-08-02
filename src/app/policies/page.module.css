@@ -1,0 +1,52 @@
+.searchBar {
+    width: 1440px;
+    height: 53px;
+    display: flex;
+    align-items: center;
+    gap: 4;
+    border-radius: 8px;
+    padding: 12px 24px;
+    background-color: #FAFAFA;
+    margin-bottom: 32px;
+}
+
+.searchBar input {
+  flex: 1;
+  border: none;
+  background-color: inherit; /* 부모 div의 배경색 상속 */
+  font-size: 20px;
+  font-weight: 400;
+  padding: 8px;
+  outline: none;
+}
+
+.searchBar input::placeholder {
+  color: #9E9E9E; /* 원하는 색상으로 변경 */
+  opacity: 1;     /* 불투명하게 */
+}
+
+.container {
+    width: 1440px;
+    height: 91px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.filterContainer {
+    width: 727px;
+    height: 27px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.filterList {
+    width: 1440px;
+    height: 52px;
+    display: flex;
+    gap: 231px;
+    border-radius: 8px;
+    padding: 8px 24px;
+    background-color: #FAFAFA;
+}

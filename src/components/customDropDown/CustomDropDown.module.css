@@ -1,0 +1,73 @@
+.dropdownContainer {
+    border: 1.5px solid #E0E0E0;
+    position: relative;
+    display: inline-block;
+}
+
+.dropdownButton {
+    min-width: 114px;
+    height: 31px;
+    padding: 4px 8px;
+    order: 1.5px solid #E0E0E0;
+    background-color: #FAFAFA;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #212121;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.dropdownButton.open {
+   border-color: #1976D2;
+}
+
+.dropdownContent {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  background-color: white;
+  border: 1px solid #212121;
+  width: 350px;
+  padding: 32px 24px;
+  z-index: 1000;
+  border-radius: 4px;
+}
+
+.checkboxGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px 16px;
+  margin-bottom: 12px;
+}
+
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  gap: 6px;
+}
+
+.checkboxLabel input[type="checkbox"]:checked + span,
+.checkboxLabel input[type="checkbox"]:checked {
+  background-color: #1976D2; /* 원하는 색상(예: 파란색) */
+}
+
+.checkboxLabel.checked {
+  background-color: #1976D2;
+}
+
+.applyButton {
+    background-color: #0026ff;
+    color: white;
+    border: none;
+    width: 107px;
+    height: 47px;
+    padding: 12px 24px;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    float: right;
+}

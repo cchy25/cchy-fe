@@ -64,13 +64,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #0F2FD8;
+    background-color: #B7C2FA;
     margin: 0 2px;
     font-weight: 500;
     font-size: 16px;
     line-height: 100%;
     letter-spacing: 0%;
-    color: #fff;
+    color: #212121;
 }
 
 .roadmapBold {
