@@ -31,6 +31,7 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
+    margin-bottom: 32px;
 }
 
 .filterContainer {
@@ -45,8 +46,171 @@
     width: 1440px;
     height: 52px;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     gap: 231px;
     border-radius: 8px;
     padding: 8px 24px;
     background-color: #FAFAFA;
+}
+
+.filteringWrapper {
+    display: flex;
+    gap: 12px;
+}
+
+.listItem {
+    width: 86px;
+    height: 23px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.listItem p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #0F2FD8;
+}
+
+.closeBtn {
+    width: 16px;
+    height: 16px;
+}
+
+.btnWrapper {
+    display: flex;
+    gap: 8px;
+}
+
+.resetBtn {
+    width: 95px;
+    height: 36px;
+    display: flex;
+    gap: 8px;
+    border-radius: 4px;
+    padding-top: 6px;
+    padding-right: 12px;
+    padding-bottom: 6px;
+    padding-left: 12px;
+    background-color: transparent;
+    border: none;
+}
+
+.applyBtn {
+    width: 76px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border: none;
+    border-radius: 4px;
+    background: #0F2FD8;
+    font-weight: 600;
+    font-size: 14px;
+    color: #FFF;
+}
+
+.headerRow {
+    display: flex;
+    background-color: #E7EBFD;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.headerCell {
+    height: 50px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #212121;
+}
+
+.cellInterest { width: 80px; }
+.cellName { width: 480px; }
+.cellTarget { width: 200px; }
+.cellItem { width: 200px; }
+.cellPeriod { width: 200px; }
+.cellMethod { width: 200px; }
+.cellRate { width: 80px; }
+
+.bookMarkWrapper {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tbodyRow {
+    display: flex;
+    min-height: 100px;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.tbcellInterest { width: 80px; display: flex; align-items: center; justify-content: center;}
+.tbcellName { width: 480px; display: flex; flex-direction: column; justify-content: center;}
+.tbcellTarget { width: 200px; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 4px;}
+.tbcellItem { width: 200px; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 4px; }
+.tbcellPeriod { width: 200px; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 4px;}
+.tbcellMethod { width: 200px; display: flex; align-items: center; justify-content: center;}
+.tbcellRate { width: 80px; font-weight: 600; font-size: 16px; display: flex; align-items: center; justify-content: center; color: #212121;}
+
+.title {
+    font-weight: 500;
+    font-size: 16px;
+    color: #212121;
+}
+
+.business {
+    font-weight: 400;
+    font-size: 12px;
+    color: #212121;
+}
+
+.targetlist {
+    height: 31px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    border-width: 1px;
+    padding: 4px 12px;
+    border: 1px solid #0F2FD8;
+    font-weight: 500;
+    font-size: 16px;
+    color: #0F2FD8;
+}
+
+.list {
+    height: 31px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    border-width: 1px;
+    padding: 4px 12px;
+    border: 1.5px solid #8899F7;
+    background-color: #E7EBFD;
+    font-weight: 500;
+    font-size: 16px;
+    color: #0F2FD8;
+}
+
+.dDay {
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    color: #FFB300;
+}
+
+.period {
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    color: #212121;
 }

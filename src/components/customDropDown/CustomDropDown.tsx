@@ -13,12 +13,17 @@ interface Props {
   options: Option[];
   onApply: (selected: string[]) => void;
   text: string;
+  selected: string[];
 }
 
-const CustomDropdown: React.FC<Props> = ({ options, onApply, text }) => {
+const CustomDropdown: React.FC<Props> = ({ options, onApply, text, selected }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedOptions, setSelectedOptions] = useState<string[]>([]);
   const dropdownRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        setSelectedOptions(selected); // ✅ 외부에서 selected가 바뀌면 내부 반영
+    }, [selected])
 
   const toggleDropdown = () => setIsOpen(!isOpen);
 

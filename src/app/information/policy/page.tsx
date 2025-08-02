@@ -33,7 +33,7 @@ export default function PolicyPage() {
             <p className={classes.business}>광주테크노파크</p>
           </td>
           <td className={`${classes.tbcellTarget}`}>
-            <div className={classes.list}>
+            <div className={classes.targetlist}>
               예비 창업자
             </div>
           </td>

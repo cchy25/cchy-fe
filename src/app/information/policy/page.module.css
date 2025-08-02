@@ -58,6 +58,20 @@
     color: #212121;
 }
 
+.targetlist {
+    height: 31px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    border-width: 1px;
+    padding: 4px 12px;
+    border: 1px solid #0F2FD8;
+    font-weight: 500;
+    font-size: 16px;
+    color: #0F2FD8;
+}
+
 .list {
     height: 31px;
     display: flex;
@@ -66,10 +80,11 @@
     border-radius: 4px;
     border-width: 1px;
     padding: 4px 12px;
-    border: 1px solid #E0E0E0;
+    border: 1.5px solid #8899F7;
+    background-color: #E7EBFD;
     font-weight: 500;
     font-size: 16px;
-    color: #9E9E9E;
+    color: #0F2FD8;
 }
 
 .dDay {
