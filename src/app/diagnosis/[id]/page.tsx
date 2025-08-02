@@ -26,7 +26,7 @@ export default function DiagnosisPage() {
   const selectedValues = answers[question.id] ?? (question.isMultiple ? [] : null);
 
   const handleOptionClick = (optionValue: any) => {
-  const isRegionQuestion = question.id === 13;
+  const isRegionQuestion = question.id === 14;
   const isAllRegion = optionValue === "ALL";
 
   if (question.isMultiple) {
@@ -61,7 +61,7 @@ export default function DiagnosisPage() {
     if (question.isMultiple) {
       if (!Array.isArray(selectedValues)) return false;
       // 지역 문항이라면 전체 선택된 경우 모든 버튼 활성화
-      if (question.id === 13 && selectedValues.length === question.options.length - 1) {
+      if (question.id === 14 && selectedValues.length === question.options.length - 1) {
         return true;
       }
       return selectedValues.includes(value);
@@ -97,7 +97,7 @@ export default function DiagnosisPage() {
           </div>
           <div 
             className={`${classes.optionsContainer} ${
-              question.id === 13 ? classes.scrollableOptions : ''
+              question.id === 14 ? classes.scrollableOptions : ''
             }`}
           >
             {question.options.map((option, index) => (

@@ -1,0 +1,136 @@
+.container {
+    max-width: 1440px;
+    height: 558px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 32px;
+}
+
+.stepContainer {
+    max-width: 351px;
+    padding: 24px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    border: 1.5px solid #E0E0E0;
+    border-radius: 10px;
+}
+
+.stepTitle {
+    width: 100%;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #000000;
+    margin-top: 8px;
+    margin-bottom: 24px;
+}
+
+.step {
+    width: 319px;
+    height: 65px;
+    border-radius: 12px;
+    border-width: 1.5px;
+    padding: 25px 23px 24px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0px;
+}
+
+.deactive {
+    border: 1.5px solid #9E9E9E;
+    background-color: #FFFFFF;
+    color: #9E9E9E;
+}
+
+.active {
+    background-color:#E7EBFD;
+    border: 1.5px solid #0F2FD8;
+    color: #0F2FD8;
+}
+
+.stepfooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.stepfooter p {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #212121;
+}
+
+.saveBtn {
+    width: 107px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background-color: #0F2FD8;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.descriptionContainer {
+    width: 1440px;
+    min-height: 355px;
+    padding: 42px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 24px;
+    border-radius: 32px;
+    background-color: #F5F5F5;
+}
+
+.descriptionTitle {
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #000000;
+}
+
+.item {
+    width: 1392px;
+    height: 93px;
+    padding: 17px 23px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 12px;
+    background-color: #FFFFFF;
+}
+
+.itemTitle {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #212121;
+}
+
+.itemSub {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color:#212121;
+}

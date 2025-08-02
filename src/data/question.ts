@@ -15,20 +15,28 @@ export interface Question {
 export const diagnosisQuestions: Question[] = [
   {
     id: 1,
-    text: '1. 창업 준비나 시작한 지, 얼마나 되셨나요?',
+    text: '1. 지금 창업 상태가 어떻게 되시나요?',
     options: [
-      { text: '예비창업', value: 0, field: 'years' },
+      { text: '예비창업', value: "PRE", field: 'targets' },
+      { text: '기창업', value: null, field: 'targets' },
+      { text: '재창업', value: "RE", field: 'targets' },
+    ],
+  },
+  {
+    id: 2,
+    text: '2. 창업 준비나 시작한 지, 얼마나 되셨나요?',
+    options: [
       { text: '창업 1년 미만', value: 1, field: 'years' },
       { text: '창업 1년 이상 - 2년 미만', value: 2, field: 'years' },
       { text: '창업 2년 이상 - 3년 미만', value: 3, field: 'years' },
       { text: '창업 3년 이상 - 5년 미만', value: 4, field: 'years' },
       { text: '창업 5년 이상 - 7년 미만', value: 5, field: 'years' },
-      { text: '재창업', value: null, field: 'years' }, // 재창업의 경우 years를 null로
+      { text: '해당 사항 없어요', value: null, field: 'years' }, // 재창업의 경우 years를 null로
     ],
   },
   {
-    id: 2,
-    text: '2. 어떤 분야에서 창업하셨거나 준비 중이세요? (복수선택 가능)',
+    id: 3,
+    text: '3. 어떤 분야에서 창업하셨거나 준비 중이세요? (복수선택 가능)',
     isMultiple: true,
     options: [
       { text: '문화·예술', value: "CULTURE", field: 'supportFields' },
@@ -42,8 +50,8 @@ export const diagnosisQuestions: Question[] = [
     ],
   },
   {
-    id: 3,
-    text: '3. 해당되는 조건이 있을까요? (복수선택 가능)',
+    id: 4,
+    text: '4. 해당되는 조건이 있을까요? (복수선택 가능)',
     isMultiple: true,
     options: [
       { text: '여성 기업이에요', value: "WOMEN", field: 'targets' },
@@ -55,32 +63,32 @@ export const diagnosisQuestions: Question[] = [
     ],
   },
   {
-    id: 4,
-    text: '4. 창업 아이템, 있으신가요?',
+    id: 5,
+    text: '5. 창업 아이템, 있으신가요?',
     options: [
       { text: '네, 있어요', value: true, field: 'hasItem' },
       { text: '아니요, 아직이에요', value: false, field: 'hasItem' },
     ],
   },
   {
-    id: 5,
-    text: '5. 창업 교육, 들어보신 적 있나요?',
+    id: 6,
+    text: '6. 창업 교육, 들어보신 적 있나요?',
     options: [
       { text: '네, 있어요', value: true, field: 'hasEdu' },
       { text: '아니요, 아직이에요', value: false, field: 'hasEdu' },
     ],
   },
   {
-    id: 6,
-    text: '6. 같이 하는 팀이 있으세요?',
+    id: 7,
+    text: '7. 같이 하는 팀이 있으세요?',
     options: [
       { text: '네, 있어요', value: true, field: 'hasTeam' },
       { text: '아니요, 혼자예요', value: false, field: 'hasTeam' },
     ],
   },
   {
-    id: 7,
-    text: '7. 비즈니스 모델, 정리해보셨나요?',
+    id: 8,
+    text: '8. 비즈니스 모델, 정리해보셨나요?',
     subtitle: '(누구에게 어떤 가치를 주고, 어떻게 수익을 낼지에 대한 계획이에요)',
     options: [
       { text: '네, 있어요', value: true, field: 'hasModel' },
@@ -88,8 +96,8 @@ export const diagnosisQuestions: Question[] = [
     ],
   },
   {
-    id: 8,
-    text: '8. 사업 계획서, 써보신 적 있으세요?',
+    id: 9,
+    text: '9. 사업 계획서, 써보신 적 있으세요?',
     subtitle: '(아이디어, 시장, 수익 구조 등을 정리해 지원사업에 제출하는 문서예요)',
     options: [
       { text: '네, 제출할 수 있을 정도로 써봤어요', value: true, field: 'hasPlanner' },
@@ -97,16 +105,16 @@ export const diagnosisQuestions: Question[] = [
     ],
   },
   {
-    id: 9,
-    text: '9. 창업 조언해주는 멘토, 있으세요?',
+    id: 10,
+    text: '10. 창업 조언해주는 멘토, 있으세요?',
     options: [
       { text: '네, 있어요', value: true, field: 'hasMentor' },
       { text: '아니요, 없어요', value: false, field: 'hasMentor' },
     ],
   },
   {
-    id: 10,
-    text: '10. 지금 사업을 시작할 만큼 자금은 준비되셨나요?',
+    id: 11,
+    text: '11. 지금 사업을 시작할 만큼 자금은 준비되셨나요?',
     subtitle: '(제품 개발, 공간 임대, 마케팅 등 초기 비용 기준이에요)',
     options: [
       { text: '네, 확보해놨어요', value: true, field: 'hasCapital' },
@@ -114,8 +122,8 @@ export const diagnosisQuestions: Question[] = [
     ],
   },
   {
-    id: 11,
-    text: '11. 사업을 운영할 수 있는 공간이 있으세요?',
+    id: 12,
+    text: '12. 사업을 운영할 수 있는 공간이 있으세요?',
     subtitle: '(사무실, 작업실, 공유 오피스 등 실제로 활동할 수 있는 공간을 말해요)',
     options: [
       { text: '네, 있어요', value: true, field: 'hasSpace' },
@@ -123,8 +131,8 @@ export const diagnosisQuestions: Question[] = [
     ],
   },
   {
-    id: 12,
-    text: '12. 사업자 등록은 마치셨어요?',
+    id: 13,
+    text: '13. 사업자 등록은 마치셨어요?',
     subtitle: '(세무서나 홈택스를 통해 정식 등록한 상태인지 기준이에요)',
     options: [
       { text: '네, 등록했어요', value: true, field: 'isRegistered' },
@@ -132,8 +140,8 @@ export const diagnosisQuestions: Question[] = [
     ],
   },
   {
-    id: 13,
-    text: '13. 어느 지역에서 창업할 계획이세요? (복수선택 가능)',
+    id: 14,
+    text: '14. 어느 지역에서 창업할 계획이세요? (복수선택 가능)',
     isMultiple: true,
     options: [
       { text: '지역은 상관없어요', value: "ALL", field: 'regions' },
