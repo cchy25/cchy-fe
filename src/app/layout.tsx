@@ -1,6 +1,9 @@
+'use client';
 import "./globals.css";
 import Header from "@/components/header/header";
+import AuthModal from "@/components/loginModal/LoginModal";
 import ReduxProvider from "@/components/reduxProvider/ReduxProvider";
+import { ModalProvider } from "@/context/ModalContext";
 
 interface RootProps {
   children: React.ReactNode;
@@ -11,8 +14,11 @@ export default function RootLayout({ children }: RootProps) {
     <html lang="ko">
       <body>
         <ReduxProvider>
-          <Header />
-          {children}
+          <ModalProvider>
+            <Header />
+            {children}
+            <AuthModal />
+          </ModalProvider>
         </ReduxProvider>
       </body>
     </html>
