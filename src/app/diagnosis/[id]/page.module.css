@@ -89,6 +89,14 @@
   max-width: 1096px;
   min-height: 146px;
   max-height: 470px;
+  overflow-y: auto;
+}
+
+.scrollableOptions {
+  min-width: 1096px;
+  max-height: 308px;
+  overflow-y: auto;
+  padding-right: 6px; /* 스크롤바 공간 확보 */
 }
 
 .optionBtn {
@@ -106,11 +114,24 @@
   cursor: pointer;
 }
 
+.active {
+  border: 2px solid #0F2FD8;
+  color: #0F2FD8;
+}
+
 .navigationButtons {
   width: 100%;
   height: 44px;
   display: flex;
-  justify-content: center;
-  gap: 1030px;
   margin-top: auto;
+  padding: 0 90px 0 100px;
+  gap: 1030px;
+}
+
+.bothButtons {
+  justify-content: space-between;
+}
+
+.nextOnly {
+  justify-content: flex-end;
 }
